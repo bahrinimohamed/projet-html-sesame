@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src = "js-projet.js"> async </script>
+    <link rel="stylesheet" href="css.css">
+    <title>Inscription</title>
+</head>
+
+<body>
+    <div id="bloc_de_page">
+        <header>
+            <div id="titre_principal">
+                <div id="logo">
+                    <img src="images/cessna.jpg" alt="" class="icon_titre" width="200" height="150">
+                    <img src="images/as350-b.jpg" alt="" class="icon_titre" width="200" height="150">
+                    <img src="images/T-38.jpg" alt="" class="icon_titre" width="200" height="150">
+                    <br><br><br><br>
+                    <div class="a">
+                    <h1 id="titre">Bienvenue à l'école de pilotage MA</h1></div>
+                    <img src="images/logo3.jpg" alt="logo" class="icon_titre">
+                </div>
+                <h2 id="titre_club">GOLD WINGS</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="helicopter.html">Helicopter</a></li>
+                    <li><a href="fighter.html">Fighter</a></li>
+                    <li><a href="transport.html">Transport</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="inscription.html">Je Postule</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <aside>
+                <h1>À propos de l'école</h1>
+                <div id="menu_club">
+                    <ul>
+                        <li><a href="historique.html#histoire">Historique</a></li>
+                        <li><a href="historique.html#appareils">Nos_Appareils</a></li>
+                        <li><a href="historique.html#Tarification">Tarification</a ></li>
+                    </ul>
+                </div>
+                <div id="social_media">
+                    <ul>
+                        <li><a href="https://www.facebook.com/"><img src="images/facebook.jpg" alt="Facebook" width="50" height="60"></a></li>
+                        <li><a href="https://twitter.com/"><img src="images/twitter.jpg" alt="Twitter" width="50" height="60"></a></li>
+                        <li><a href="https://www.google.com/"><img src="images/instagram.jpg" alt="Intagram" width="50" height="60"></a></li>
+                        <li><a href="https://www.linkedin.com/"><img src="images/youtube.jpg" alt="Youtube" width="82" height="60"></a></li>
+                        <li><a href="https://www.youtube.com/"><img src="images/linkedin.jpg" alt="LinkedIn" width="82" height="60"></a></li>
+
+                    </ul>
+                </div>
+            </aside>
+            <article id="index">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="images/F-35A.jpg" width="750" height="400">
+                      <h1 class="text" style="text-align:center">F-35A</h1>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="images/Blackhawk.jpg" width="750" height="400">
+                      <h1 class="text" style="text-align:center">Blackhawk</h1>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="images/airbus-a380.jpg" width="750" height="400">
+                      <h1 class="text" style="text-align:center">A-380</h1>
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                    
+                    <script>
+                    var slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 3000); 
+                    }
+                    </script>
+                    <fieldset>
+                        <legend style="text-align:center">WELCOME TO OUR FLIGHT ACADEMY</legend>
+                        <h1>"JE VEUX VOLER, JE VEUX DEVENIR PILOTE ET QUE MON REVE D'ENFANT DEVINNE MON METIER D'ADULTE"</h1>
+                        <p>Notre école vous donne l'opportunité de rendre votre rève une réalité.</p>
+                        <p>Vous avez 3 spécialités dans notre école</p>
+                        <ul>
+                            <li><a href="helicopter.html">HELICOPTER</a></li>
+                    <li><a href="fighter.html">FIGHTER</a></li>
+                    <li><a href="transport.html">TRANSPORT</a></li>
+                        </ul>
+                    </fieldset>
+            </article>
+        <footer>
+            <div id="adresse">
+                <h1>NOTRE ADRESSE</h1>
+                <p>CITE NASSR ARIANA</p>
+                <p>Tel: (216)71589898</p>
+                <p>Fax: (216)71589554</p>
+            </div>
+            <div id="nos_amis">
+                <h1>Nos partenaires</h1>
+                <ul>
+                    <li><a href="https://www.esma.fr//" class="lien_amis"><img src="images/esma.jpg" alt="" class="logo_amis"><br>ESMA</a></li>
+                    <li><a href="https://www.enac.fr/fr" class="lien_amis"><img src="images/enac.jpg" alt="" class="logo_amis"><br>ENAC</a></li>
+                    <li><a href="https://www.estaca.fr/" class="lien_amis"><img src="images/estaca.jpg" alt="" class="logo_amis"><br>ESTACA</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
